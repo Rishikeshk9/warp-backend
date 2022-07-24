@@ -34,7 +34,8 @@ app.post("/send", (req, res) => {
       subject: "You have received a new File from " + req.body.from_name,
       html: `
               <p>Connect ${req.body.wallet} </p>
-              <h5>Click on this to verify account</h5>
+              <a href="https://warp-frontend-xi.vercel.app/download/${req.body.message}">Click here to View & Download File</a>
+              ${req.body.message}
               `,
     });
     console.log("sending Mail");
