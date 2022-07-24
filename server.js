@@ -1,11 +1,8 @@
 const express = require("express");
 const port = 5000;
 const cors = require("cors");
-const router = require("express").Router();
-
 const nodemailer = require("nodemailer");
 const sendgridTransport = require("nodemailer-sendgrid-transport");
-var bodyParser = require("body-parser");
 const app = express();
 
 require("dotenv").config();
